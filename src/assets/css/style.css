@@ -1,12 +1,28 @@
 @import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
+.app {
+  font-family: Titillium Web;
+}
 .app__background {
   position: absolute;
   top: 0;
   left: 0;
 
+  animation-name: grayscale;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+
   background: url("../img/background.jpg") no-repeat center / cover;
   
   width: 100vw;
   height: 100vh;
+
+  z-index: -5;
+}
+@keyframes grayscale {
+  100% {
+    filter: grayscale(.7);
+  }
 }
