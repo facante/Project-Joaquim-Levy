@@ -3,20 +3,35 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const routes = [
+export const routes = [
   {
     path: '*',
+    menu: false,
     component: () => import('../views/home/Home')
   },
   {
     path: '/',
     name: 'Home',
+    menu: true,
     component: () => import('../views/home/Home')
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'Sobre',
+    menu: true,
     component: () => import('../views/about/About')
+  },
+  {
+    path: '/pics',
+    name: 'Fotos',
+    menu: true,
+    component: () => import('../views/pics/Pics')
+  },
+  {
+    path: '/family',
+    name: 'Familia',
+    menu: true,
+    component: () => import('../views/family/Family')
   },
 ]
 
