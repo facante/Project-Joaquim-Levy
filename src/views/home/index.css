@@ -1,0 +1,111 @@
+.header {
+  background: #3d4da7b0;
+  width: 100vw;
+  height: calc(100vh - 52px);
+}
+.home__title {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+
+  color: #fff;
+
+  font-family: 'Jura';
+  font-size: 8rem;
+  font-weight: 300;
+  text-align: right;
+  user-select: none;
+
+  z-index: 1;
+}
+.home__title strong {
+  color: #FFF;
+  font-weight: 300;
+  user-select: none;
+
+  animation: color 10s alternate infinite;
+}
+.home__subtitle {
+  position: absolute;
+  top: 12.5rem;
+  right: 2.6rem;
+
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: right;
+  letter-spacing: .087rem;
+}
+.home__welcome-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+}
+.home__welcome {
+  color: #fff;
+
+  font-family: 'Jura';
+  font-weight: 300;
+  font-size: 2rem;
+  text-align: center;
+
+  width: 100%;
+}
+.home__arrow-down {
+  cursor: pointer;
+  animation: pulse 2s 3s infinite;
+}
+.header__animate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  height: 100vh;
+}
+.header__animate___block {
+  opacity: 0;
+}
+.header__animate___block:nth-child(1) {
+  background: url('../../assets/img/hearder-block-1.jpg') no-repeat center / cover;
+  animation: header-block 12s 3.2s ease-in infinite ;
+}
+.header__animate___block:nth-child(2) {
+  background: url('../../assets/img/hearder-block-2.jpg') no-repeat center / cover;
+  animation: header-block 12s 3.6s ease-in infinite ;
+}
+.header__animate___block:nth-child(3) {
+  background: url('../../assets/img/hearder-block-3.jpg') no-repeat center / cover;
+  animation: header-block 12s 4s ease-in infinite ;
+}
+@keyframes header-block {
+  5% {
+    opacity: .6;
+  }
+  9% {
+    opacity: .6;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
