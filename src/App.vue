@@ -1,5 +1,5 @@
 <template>
-  <div class="app" data-aos="fade" data-aos-duration="500">
+  <div class="app" data-aos="fade">
     <div class="app__background"></div>
     <Navbar data-aos="fade" data-aos-delay="400" data-aos-duration="1000" />
     <div

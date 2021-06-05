@@ -1,28 +1,25 @@
 <template>
-  <div>
-    <div class="navbar__tranparent"></div>
-    <nav class="navbar">
-      <div class="navbar__logo" data-aos="fade-left" data-aos-delay="1100">
-        STBcreator
-      </div>
-      <ul class="navbar__list" data-aos="fade-right" data-aos-delay="900">
-        <li class="navbar__item" v-for="route in routes" :key="route.id">
-          <router-link class="navbar__link" :to="{ name: route.name }"
-            >{{ route.name }}</router-link
-          >
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="navbar">
+    <div class="navbar__logo" data-aos="fade-left" data-aos-delay="1100">
+      STBcreator
+    </div>
+    <ul class="navbar__list" data-aos="fade-right" data-aos-delay="900">
+      <li class="navbar__item" v-for="route in routes" :key="route.id">
+        <router-link class="navbar__link" :to="{ name: route.name }">{{
+          route.name
+        }}</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
-import { routes } from '../router/index'
+import { routes } from "../router/index";
 export default {
   data() {
     return {
-      routes: routes.filter(route => route.menu)
-    }
+      routes: routes.filter((route) => route.menu),
+    };
   },
 };
 </script>
@@ -41,7 +38,7 @@ export default {
   order: 1;
 }
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -82,7 +79,6 @@ export default {
   border-bottom: 3px solid #e0b1ff;
 }
 .navbar .router-link-exact-active {
-  color: #e0b1ff;
-  border-bottom: 3px solid #e0b1ff;
+  animation: 'color-nav' 10s alternate infinite;
 }
 </style>

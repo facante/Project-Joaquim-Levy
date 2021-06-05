@@ -1,28 +1,60 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;600;700&display=swap');
 
 .app {
   font-family: Titillium Web;
+  overflow: hidden;
 }
 .app__background {
   position: absolute;
-  top: 0;
-  left: 0;
 
-  animation-name: grayscale;
-  animation-duration: 1s;
-  animation-delay: .5s;
-  animation-fill-mode: forwards;
+  background: url('../img/background.jpg') no-repeat center / cover;
+  background-attachment: fixed;
 
-  background: url("../img/background.jpg") no-repeat center / cover;
-  
-  width: 100vw;
-  height: 100vh;
+  filter: grayscale(.3);
+
+  width: 100%;
+  height: 100%;
 
   z-index: -5;
 }
-@keyframes grayscale {
+@keyframes color {
+  20% {
+    color: #b1dcff;
+  }
+  40% {
+    color: #bdffb1;
+  }
+  60% {
+    color: #fffeb1;
+  }
+  80% {
+    color: #ffb1b1;
+  }
   100% {
-    filter: grayscale(.7);
+    color: #e0b1ff;
+  }
+}
+@keyframes color-nav {
+  20% {
+    color: #b1dcff;
+    border-bottom: 3px solid #b1dcff;
+  }
+  40% {
+    color: #bdffb1;
+    border-bottom: 3px solid #bdffb1;
+  }
+  60% {
+    color: #fffeb1;
+    border-bottom: 3px solid #fffeb1;
+  }
+  80% {
+    color: #ffb1b1;
+    border-bottom: 3px solid #ffb1b1;
+  }
+  100% {
+    color: #e0b1ff;
+    border-bottom: 3px solid #e0b1ff;
   }
 }
