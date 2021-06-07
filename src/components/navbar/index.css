@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #0c102ce3;
+
+  overflow: hidden;
+  opacity: 0;
+
+  padding: 0 2rem;
+  transform: translateY(-52px);
+
+  z-index: 100;
+  animation: show .6s .5s forwards;
+}
+.navbar__logo {
+  color: #eee;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  opacity: 0;
+  transform: translateX(100px);
+
+  order: 1;
+  animation: show .7s 1.3s forwards;
+}
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: show .7s .9s forwards;
+}
+.navbar__link {
+  display: block;
+
+  color: #ddd;
+  border-bottom: 3px solid transparent;
+
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 1rem 0.3rem;
+
+  transition: .3s;
+}
+.navbar__link:hover {
+  color: #e0b1ff;
+  border-bottom: 3px solid #e0b1ff;
+}
+.navbar .router-link-exact-active {
+  animation: colored-nav 10s alternate infinite;
+}

@@ -18,6 +18,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 }
+html {
+	scroll-behavior: smooth;
+}
 ol, ul {
 	list-style: none;
 }
@@ -47,6 +50,10 @@ del {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+	color: black;
+	text-decoration: none;
 }
 ::-webkit-scrollbar {
 	width: 0px;

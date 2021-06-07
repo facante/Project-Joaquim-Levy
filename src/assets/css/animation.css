@@ -1,0 +1,71 @@
+@keyframes colored {
+  0% {
+    color: #fff;
+  }
+  20% {
+    color: #b1dcff;
+  }
+  40% {
+    color: #bdffb1;
+  }
+  60% {
+    color: #fffeb1;
+  }
+  80% {
+    color: #ffb1b1;
+  }
+  100% {
+    color: #e0b1ff;
+  }
+}
+@keyframes colored-nav {
+  0% {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+  }
+  20% {
+    color: #b1dcff;
+    border-bottom: 3px solid #b1dcff;
+  }
+  40% {
+    color: #bdffb1;
+    border-bottom: 3px solid #bdffb1;
+  }
+  60% {
+    color: #fffeb1;
+    border-bottom: 3px solid #fffeb1;
+  }
+  80% {
+    color: #ffb1b1;
+    border-bottom: 3px solid #ffb1b1;
+  }
+  100% {
+    color: #e0b1ff;
+    border-bottom: 3px solid #e0b1ff;
+  }
+}
+@keyframes header-block {
+  5% {
+    opacity: .6;
+  }
+  9% {
+    opacity: .6;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse-arrow {
+  100% {
+    transform: translateY(10px);
+  }
+}
